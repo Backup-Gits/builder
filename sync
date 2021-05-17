@@ -10,9 +10,10 @@ git clone https://github.com/pocox3pro/Local-Manifests -b master --depth=1 .repo
 # Sync source with -q, no need unnecessary messages, you can remove -q if want! try with -j30 first, if fails, it will try again with -j8
 repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j 30 || repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j 8
 
-
+ls kernel/xiaomi/vayu
 echo "ok!"
 cd /tmp/rom/
 ls vendor/xiaomi/vayu
 ls device/xiaomi/vayu
+ls device/xiaomi/vayu-prebuilt
 echo "ok!"

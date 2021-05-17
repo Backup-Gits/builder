@@ -1,12 +1,9 @@
 #!/bin/bash
 cd /tmp/rom # Depends on where source got synced
 
-curl https://gist.githubusercontent.com/rahul9999xda/a1859ad15991c027832b36b33d27828b/raw/0cb97e3074a2b0260ecdbc8c7a64bb5b45d4834e/gms_full.mk >> gms_full.mk
-mv gms_full.mk vendor/gms/
-rm -rf device/generic/opengl-transport
 # Normal build steps
 . build/envsetup.sh
-lunch derp_vayu-userdebug
+lunch derp_vayu-user
 export CCACHE_DIR=/tmp/ccache
 export CCACHE_EXEC=$(which ccache)
 export USE_CCACHE=1
